@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- CSS file -->
+		<link rel="shortcut icon" href="https://www.promo-parrain.com/favicon.ico">
+		<link rel="stylesheet" href="https://www.promo-parrain.com/css/fontawesome/css/all.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.promo-parrain.com/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.promo-parrain.com/css/forme.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.promo-parrain.com/css/simpleMobileMenu.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1ZLDNF6MJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M1ZLDNF6MJ');
+</script>
+		<title>Erreur 404</title>
+</head>
+
+<div id="center">
+	<header class="cf navigation">
+			<a href="https://www.promo-parrain.com">
+				<div id="logo"></div>
+			</a>
+			<nav>
+				<ul class="mobimenu">
+					<li><a href="https://www.promo-parrain.com/categories" title="CATEGORIES">CATEGORIES</a></li>
+					<li><a href="https://www.promo-parrain.com/parrainages.html" title="OFFRES DE PARRAINAGES">DERNIERS PARRAINAGES</a></li>
+					<li><a href="https://www.promo-parrain.com/connexion.html" title="CONNEXION"> <i class="fa fa-user"></i> CONNEXION</a></li>
+							<li><a href="https://www.promo-parrain.com/inscription.html" title="INSCRIPTION"> <i class="fa fa-user"></i> INSCRIPTION</a></li>					<li><a href="https://www.promo-parrain.com/parrain/ajouter" title="AJOUTER UNE OFFRE DE PARRAINAGE"><i class="fa fa-plus"></i> AJOUTER</a></li>
+					<li><a href="" class="searchicone" title="Rechercher un magasin"><i class="fas fa-search"></i></a></li>
+				</ul>
+			</nav>
+	</header>
+	<div class="searchbox"><label for="searchinput" class="fas fa-search input-iconsearch"></label><input id="searchinput" name="searchinput" type="text" placeholder="Marchand"></div>
+
+	<script src="https://www.promo-parrain.com/script/jquery-3.5.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://www.promo-parrain.com/css/jquery.smartsuggest.css" />
+<script src="https://www.promo-parrain.com/script/jquery.smartsuggest-simple.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			$('.menu_deroulantmembre').click(function(event) {
+				event.stopPropagation();
+
+				$(this).next('.vpb_down_triangle').toggle();
+				var cible = $(this).next('.vpb_down_triangle');
+			});
+		});
+
+	</script>
+				<div class="block_inside">
+			    <h1 class="iconic alaune"> Erreur 404</h1>
+
+			    Page non trouvée ! Veuillez <b><a href="https://www.promo-parrain.com/contact.html" alt="Contacter pour signaler votre problème">nous contacter</a></b> pour nous signaler le problème. <br /><br /><br />
+			 </div>
+			 
+</div>
+<div class="container">
+	<div id="footer">
+		<div class="footer_line">
+					<img src="https://www.promo-parrain.com/images/logo.png" alt="Promo Parrain" />
+		</div>
+			
+		<div class="footer_column">
+			<h5 style="color:#CCC;">Communauté</h5>
+			<a title="Règles de Diffusions" href="https://www.promo-parrain.com/parrain/ajouter">Ajouter une offre de parrainage</a><br />
+			<a title="Règles de publication" href="https://www.promo-parrain.com/regles-de-publication.html">Règles de publication</a><br />
+			<a title="Foire Aux QUestions" href="https://www.promo-parrain.com/parrain/ajouter">FAQ (bientôt)</a><br />
+		</div>
+		<div class="footer_column">
+				<h5 style="color:#CCC;">Promo-Parrain</h5>
+				<a title="Conditions Générales d'Utilisation" href="https://www.promo-parrain.com/mentions-legales.html">Mentions légales</a><br />
+				<a href="https://www.promo-parrain.com/contact.html">Contactez-nous</a>
+		</div>
+		<div class="footer_column">
+				<h5 style="color:#CCC;">Partenaires</h5>
+					<a href="https://www.promo-parrain.com/contact.html">Proposez votre site</a>
+		</div>
+		<div class="footer_column">
+				<h5 style="color:#CCC;">Suivez-nous</h5>
+				<a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
+				<a href=""><i class="fab fa-twitter-square fa-3x"></i></a>
+				<a href=""><i class="fab fa-instagram-square fa-3x"></i></a>
+				<a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+		</div>
+		<div class="footer_lineend">
+			<p>
+			0 requètes éxecutées en 0.002 sec</p>
+		</div>
+	
+	</div>
+</div>
+	<script>
+    $(document).ready(function() {
+		
+    	$('#searchinput').smartSuggest({
+			src: 'https://www.promo-parrain.com/pages/include/recherche.php',
+			executeCode: false
+		});
+		$('.searchicone').click(function(e) {
+				$('.searchbox').slideDown();
+				$('#searchinput').focus();
+				
+				e.preventDefault();
+			});
+    });
+</script>
+</body>
+</html>

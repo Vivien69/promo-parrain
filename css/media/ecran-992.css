@@ -1,0 +1,59 @@
+@media all and (min-width:768px) and (max-width : 992px) {
+    body {
+        overflow-x: hidden;
+      }
+      .mainbadges {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    .content {
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+    }
+  
+    .block_inside,
+    .no-block_inside {
+      order: 2;
+    }
+  
+    .aside {
+      order: 1;
+      display: block;
+      padding: 20px 20px 30px;
+      width: 100%;
+      margin: 10px auto;
+    }
+    p#counterBlock {
+      display:inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      margin:0;
+    }
+    label[for=description] i {
+      display:inline-block;
+      margin-top:0px;
+      margin-left:10px;
+      font-weight:normal;
+      font-size:12px;
+    }
+    label[for=description] {
+      width:auto;
+    }
+    #ca_message {
+      max-width:310px 
+    }
+    #crumbs ul {
+      padding-right:0;
+    }
+    #crumbs ul li {
+      font-size: 12px;
+      }
+    .gridindex {
+      grid-template-columns: repeat(1,1fr);
+
+    }
+    .aff_droitindex {
+      min-width:0;
+    }
+    
+  }

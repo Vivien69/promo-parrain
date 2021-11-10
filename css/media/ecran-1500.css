@@ -1,0 +1,19 @@
+@media all and (min-width:1500px) {
+
+    .block_inside,
+    .no-block_inside{
+        width: 90%;
+        max-width: 90%;
+        max-width:1700px;
+    }
+    .ar_dimension {
+        max-width:1400px;
+        margin:0 auto;
+
+    }
+    #ca_message {
+        max-width:310px;
+    }
+    
+
+}

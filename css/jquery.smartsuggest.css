@@ -1,0 +1,149 @@
+div.ss-wrap 
+{
+	
+	padding: 0;
+	border: none;
+	background: none;
+	background-color: transparent;
+	background-image: none;
+	background-position: 0 0;
+	text-decoration: none;
+	font-size: 1em;
+	display:inline-block;
+	min-width:150px;
+	max-width:600px;
+	width:100%;
+}
+
+input.ss-input
+{
+	display: inline-block;
+}
+
+input.ss-input-thinking
+{
+	background-image: url(../images/indicator.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+ul.ss-box
+{
+	display:block;
+	/* Will be absolutely positioned in the JavaScript */
+	margin: 0 !important;
+	padding:0 !important;
+	max-width                    : 618px;
+	width                        : 100%;
+	min-width                    : 140px;
+	z-index: 999999;
+	font-size: 12px;
+	background: #fff;
+	list-style: none;
+}
+	
+	ul.ss-box li
+	{
+		float: left;
+		width:100%;
+		clear: both;
+	}
+
+	ul.ss-box li.ss-header
+	{
+		height: 13px;
+		overflow: hidden;
+		padding: 5px 0px;
+		color: #fff;
+		height:auto;
+		background: #701818;
+		
+	}
+
+		ul.ss-box li.ss-header p.ss-header-text
+		{
+			margin: 0 !important;
+			padding: 0px 0 2px 20px !important;
+			font-size: 12px;
+			font-weight: bold;
+		}
+
+		ul.ss-box li.ss-header p.ss-header-limit
+		{
+			margin: 0 !important;
+			padding: 0px 0 2px 20px !important;
+			text-align:center;
+			font-size: 12px;
+			font-weight: normal;
+		}
+
+	ul.ss-box li.ss-result
+	{
+		margin: 0 !important;
+		padding: 0 !important;
+		border-bottom: 1px solid #EEE;
+	}
+
+		ul.ss-box li.ss-result a
+		{
+			display:block;
+			padding: 10px 15px;
+			text-decoration: none !important;
+			background: #FFF;
+			min-width:110px;
+			max-width:620px;
+		}
+		
+		ul.ss-box li.ss-result a:hover
+		{
+			background: #F8F8F8; /* Also is set in JavaScript file for IE6 compatibility */
+		}
+		ul.ss-box li.ss-result a:after {
+			content: '';
+			border-bottom: none;  
+			transform: none;  
+			 transition: none;
+		}
+		ul.ss-box li.ss-result a:hover:after { transform: none; }
+
+		ul.ss-box li.ss-result img
+		{
+			margin-right: 12px;
+		}
+		ul.ss-box li.ss-result table tbody tr td
+		{
+			min-width:110px;
+			max-width:420px;
+			text-align:left;
+		}
+
+		ul.ss-box li.ss-result p
+		{
+			margin: 0 !important;
+			padding: 0 !important;
+			color: #444;
+			font-weight: normal;
+			font-size: 11px;
+		}
+
+			ul.ss-box li.ss-result p span.ss-result-title
+			{
+				display: inline !important;
+				margin: 0 !important;
+				font-size: 14px;
+				font-weight: bold;
+				color: #701818;
+				text-transform:uppercase;
+			}
+			.item-img {
+				border: 2px solid #f0efef;
+				background-color: #fff;
+				padding: 5px 5px;
+				margin-right: 10px;
+				width: 100px;
+				height: 40px;
+				position: relative;
+				background-size: 100px;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}

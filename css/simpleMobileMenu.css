@@ -1,0 +1,101 @@
+
+
+@import url("media/smartphones-576.css");
+@import url("media/tablettes-768.css");
+@import url("media/ecran-992.css");
+@import url("media/ecran-1200.css");
+@import url("media/ecran-1500.css");
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+
+.cf {
+  *zoom: 1;
+}
+
+/*---------Authar Style----------*/
+
+
+.smobitrigger,
+.mnuclose {
+  display: none;
+}
+
+header {
+  background-color: #701818;
+  padding:5px 5px 0;
+}
+
+nav ul, nav li {
+  list-style-type: none;
+  list-style-position:inside;
+  margin:0;
+  padding:0; 
+}
+
+nav {
+	display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul{
+  display:flex;
+  font-size: 0;
+  padding: 0px;
+  list-style: none;
+  list-style-position:inside;
+  align-items: flex-end;
+}
+
+nav ul li a{
+  
+  color: #FFF;
+  font-family: 'BebasNeueRegular';
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 10px;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+nav ul li a:hover {
+  background: #FFF;
+  color: #333434;
+}
+.nohovernav {
+  padding:5px 2px 0 2px;
+	margin:5px 0px 0px 0px;
+	font-size: 0;
+	background: unset;
+  border-radius:47%;
+}
+.nohovernav:hover {
+  background-color: unset;
+  color: #333434;
+} 

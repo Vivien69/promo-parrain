@@ -1,0 +1,355 @@
+* {
+	margin: 0;
+}
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0px auto;
+	padding: 0;
+	background-color: #FFF;
+	font-family: Verdana, sans-serif, Arial;
+	color: #4c4b48;
+	font-size: 13px;
+	height: calc(100vh - 98px);
+	position: relative;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	background-color: #701818;
+	padding: 10px 10px 20px;
+	margin: 0 auto;
+	height: 50px;
+}
+.searchbox {
+	text-align: center;
+	margin-right:30px;
+	display:inline-block;
+}
+#logo {
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	padding:0 10px 0 0;
+	width: 180px;
+	height: 60px;
+	display: inline-block;
+	vertical-align: -15px;
+}
+.menubarre {
+	float: right;
+}
+
+
+.bordure {
+    padding:2px 3px 0 3px;
+	 /*border-radius*/
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+/* FIN MENU HAUT DROIT */
+
+/***----- MENU HAUT DROIT -----***/
+@font-face {
+	font-family: 'Economica';
+	src: url('../polices/Economica-Regular-OTF.otf');
+	font-weight: normal;
+	font-display: swap;
+
+}
+
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../polices/BebasNeue-webfont.eot');
+	src: url('../polices/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../polices/BebasNeue-webfont.woff') format('woff'),
+		url('../polices/BebasNeue-webfont.ttf') format('truetype'),
+		url('../polices/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+#menu {
+	background-color: #3E424D;
+	border-bottom: 1px solid #742c2c;
+	padding: 5px 4px 6px 4px;
+	text-align: center;
+	height: 32px;
+
+}
+
+#center {
+
+	text-align: center;
+	background-color: #E9EAED;
+	margin: 0 auto;
+	min-height: 100%;
+	margin-bottom: -142px;
+}
+
+#center:after {
+	content: "";
+	display: block;
+	height: 142px;
+}
+
+.bordure {
+	padding: 2px 3px 0 3px;
+	/*border-radius*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#menu ul {
+	padding: 0;
+	font-size: 0;
+}
+
+#menu li {
+	display: inline;
+}
+
+.list-item:hover .gerer {
+	display: inline;
+}
+
+#menu ul li p {
+
+color:#333434;
+line-height:33px;
+padding:12px 10px;
+text-decoration:none;
+font-family: BebasNeueRegular;
+font-weight:bold;
+font-size:16.5px;
+text-transform:uppercase;
+}
+
+#menu ul li::after {
+	content: url(../images/separator.png);
+}
+
+#menu ul li:last-child::after {
+	content: '';
+}
+
+#menu ul li a:hover {
+	background-color: #af7070;
+	text-shadow: 0px 0px 2px #FFFFFF;
+	-webkit-transition: 0.4s ease-in;
+	-moz-transition: 0.4s ease-in;
+	-o-transition: 0.4s ease-in;
+	-ms-transition: 0.4s ease-in;
+	transition: 0.4s ease-in;
+}
+
+.linkmenubarre {
+	padding: 27px 12px;
+	border-left: 1px solid #EAEAEA;
+	line-height: 50px;
+	text-decoration: none;
+	margin-right: -5px;
+}
+
+.linkmenubarre:hover {
+	background-color: #F4F5F7;
+}
+
+/***----- BLOCK CENTRE -----***/
+.notifications {
+	display: inline-block;
+	margin-right: 15px;
+	padding: 5px;
+	width: 700px;
+
+}
+
+.content {
+	display: flex;
+	width: 1110px;
+	margin: 0 auto;
+}
+
+.block_inside {
+	order: 1;
+	padding: 20px 20px 30px;
+	margin: 0px auto;
+	width: 94%;
+	background: #FFF;
+}
+
+.no-block_inside {
+	order: 1;
+	padding: 20px 20px 30px;
+	margin: 0px auto;
+	width: 94%;
+}
+
+.block_inside a {
+	color: #701818;
+}
+
+.block_inside p {
+	padding: 0 10px;
+}
+
+.aside {
+	order: 2;
+	width: 200px;
+	background: #FFF;
+	vertical-align: top;
+}
+
+.text_block {
+	width: 800px;
+	margin-left: 25px;
+}
+
+/*FIN BLOCK CENTRE*/
+
+/***----- INDICATIONS,VALIDER,ERREURS -----***/
+.indication {
+	color: #878787;
+	font-size: 11px;
+	font-style: italic;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.indicationphoto {
+	color: #878787;
+	font-size: 11px;
+	font-style: italic;
+	text-align: left;
+	padding-top: 0px;
+	margin-left: 370px;
+}
+
+.erreur {
+	border: 1px solid #bb6262;
+	font-weight: bold;
+	background: #f5c8c8;
+	margin: 10px auto;
+	color: #501515;
+	text-align: center;
+	padding: 9px 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.valider {
+	border: 1px solid #62bb70;
+	font-weight: 500;
+	background: #c8f6cf;
+	margin: 10px auto;
+	color: #15501e;
+	text-align: center;
+	padding: 9px 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.erreurform {
+	margin-left: 40%;
+	color: #CC0000;
+	font-size: 11px;
+	text-align: left;
+}
+
+.input-erreur {
+	background: #EA9999;
+}
+
+.erreurmini {
+	margin: 0 auto;
+	color: #CC0000;
+	font-size: 11px;
+	text-align: left;
+}
+
+.validform {
+	color: #2a9c3b;
+	font-size: 11px;
+	text-align: left;
+}
+
+.erreurinfo {
+	color: #CC0000;
+	text-align: left;
+}
+
+.validinfo {
+	color: #2a9c3b;
+	text-align: left;
+}
+
+.infotexte {
+	color: #146797;
+	font-weight: bold;
+}
+
+.bonuschamps {
+	display: block;
+	margin-right: 100px;
+}
+
+/*FIN INDICATIONS,VALIDER,ERREURS*/
+
+/***----- FOOTER -----***/
+#footer {
+	display: -ms-grid;
+	display:grid;
+	grid-template-rows: 60px 130px 20px;
+	-ms-grid-rows: 60px 130px 20px;
+	padding: 30px 20px 0px;
+	margin: 0 auto;
+	font-size: 11px;
+	width:92%;
+	justify-items: stretch;
+}
+.footer_line {
+	padding:0 20px;
+	grid-row: 1;
+	grid-column:span 2;
+}
+.footer_column {
+	padding:0 20px;
+	grid-row: 2;
+	text-align:left;
+}
+.footer_lineend {
+	text-align: center;
+	grid-row: 3;
+	grid-column: 1 / span 4;
+	justify-self: center;
+	color: #EEE;
+}
+.container {
+	display:block;
+	text-align: center;
+	background: #701818;
+}
+#footer .long {
+	width: 35%;
+	margin-left: 10px;
+}
+
+
+
+#footer a {
+	color: rgb(228, 228, 228);
+}
+
+
+/* FIN FOOTER */

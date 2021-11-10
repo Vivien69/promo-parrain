@@ -1,0 +1,17 @@
+{
+    "name": "vivs/promo-parrain",
+    "authors": [
+        {
+            "name": "Vivien",
+            "email": "proviv-pub@protonmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "class"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.4"
+    }
+}

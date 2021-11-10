@@ -1,0 +1,385 @@
+@media all and (max-width : 576px) {
+  h1 {
+    font-size:21px;
+    margin:5px 0 10px 0;
+  }
+  
+  h2 {
+    font-size:19px;
+  }
+  h3 {
+    font-size:18px;
+    margin:0px;
+  }
+  h4 {
+    font-size:18px;
+  }
+  h5 {
+    font-size:18px;
+  }
+  .pboutonr {
+    font-size:17px;
+    padding:6px 10px 6px;
+  }
+  .block_inside,
+  .no-block_inside {
+    padding: 20px 0px 30px;
+    width:100%;
+  }
+  .voir_annonce_texte {
+    padding: 10px 0;
+    margin:0;
+  }
+  .messagerieScrollMessages {
+  width:100%;
+  }
+  .mainbadges {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+    body {
+      overflow-x: hidden;
+    }
+  
+    .hide-media {
+      display:none;
+    }
+    .box-annonce div:nth-child(2),  .box-annonce div:nth-child(4) {
+      width:100% !important;
+    }
+    .box-annonce, .box-annonce2 {
+      flex-wrap: wrap;
+       justify-content: space-between;
+    }
+    .box-annonce p{
+      text-align:center;
+    }
+    .box-annonce :nth-child(1) {
+      order:1;
+    }
+    .box-annonce :nth-child(2) {
+      order:3;
+      margin-top:10px;
+    }
+    .box-annonce :nth-child(3) {
+      order:2;
+      margin-top:25px;
+      margin-right:25px;
+    }
+    .box-annonce :nth-child(4) {
+      order:4;
+    }
+
+    .box-annonce2 :nth-child(1){
+      order:1;
+    }
+    .box-annonce2 :nth-child(5){
+      order:2;
+    }
+    .box-annonce2 :nth-child(4){
+      order:3;
+    }
+    .box-annonce2 :nth-child(3){
+      order:4;
+    }
+    .box-annonce2 :nth-child(2){
+      order:5;
+    }
+    .widthto30media {
+      width:25% !important;
+    }
+   .actu-div {
+    left:30% !important;
+    }
+  #flex {
+    flex-direction:column;
+  }
+  .voir_ann :nth-child(1) {
+    order:2;
+  }
+  .voir_ann :nth-child(2) {
+    order:1;
+  }
+  .rightcontext{
+    flex-basis:100%;
+    width:100%;
+  }
+  .aff_droit {
+    margin:0;
+    border-top:10px solid #E9EAED;
+    box-shadow:none;
+    max-width:100%;
+  }
+  .navigation nav ul li a {
+    font-size: 16px;
+    padding: 7px 4px;
+  }
+  .dropdownmenu {
+    font-size: 15px;
+    display:none;
+  }
+  .mobileddmenu {
+    display:block;
+  }
+  .dropdown_avatar {
+    width: 35px;
+    height:35px;
+  }
+  .aff_gauche_voir {
+    padding:20px 0;
+    margin:0;
+    border:none;
+    border-top:10px solid #E9EAED;
+    box-shadow:none;
+  }
+  .cart-membre :nth-child(1) {
+      order:1;
+    }
+label {
+  width:260px;
+}
+#add_marchand label {
+  width:150px;
+}
+.presentation-categories {
+  padding: 10px 5px !important;
+}
+.profil_menuright {
+  float:none !important;
+}
+.borred {
+  margin:10px 0;
+  border: 2px solid #701818;
+}
+.popup_block {
+	width:290px;
+  padding-left:20px;
+  padding-right:20px;
+}
+.btn_close {
+	float: right;
+	margin: -35px -35px 0 0;
+}
+p#counterBlock {
+  display:inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin:0;
+}
+label[for=description] i {
+  display:inline-block;
+  margin-top:0px;
+  margin-left:10px;
+  font-weight:normal;
+  font-size:12px;
+}
+label[for=description] {
+  width:auto;
+}
+
+select, input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="number"]):not(#searchinput) {
+  min-width:80%;
+  width:80%;
+}
+textarea {
+  width:85%;
+}
+.navigation {
+  text-align: left;
+}
+.smobitrigger,
+.mnuclose {
+  display: inline-block;
+}
+.box-messagerie-id {
+order:2;
+}
+#message-voir{
+order:1;
+}
+.smobitrigger {
+  color: #fff;
+  font-size: 30px;
+  line-height: 12px;
+  padding: 10px;
+}
+
+.mnuclose {
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.smobitrigger span,
+.mnuclose span {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+#parent-hover {
+  display:flex;
+  justify-content: center;
+  float:none;
+}
+
+.dialog-open_inner label{
+  min-width:200px;
+  }
+.dialog-open:before {
+    top: -16px;
+    right: calc(50% - 21px);
+    border-bottom-color: #701818;
+    border-width: 16px;
+  }
+  .boxpf {
+padding:10px 5px;
+  }
+.dialog-open:after {
+    top: -15px;
+    right: calc(50% - 20px);
+    border-bottom-color: #FFF;
+    border-width: 15px;
+  }
+  #parent-hoveradd {
+    justify-content:center;
+  }
+.sousmenucateg a {
+  font-size:14px  !important;
+  padding: 2px 5px ;
+}
+.navigation nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.29);
+}
+#header {
+width:100%;
+height:auto !important;
+}
+.liste2photo {
+  height: 30px;
+  width: 30px;
+}
+
+#listeconsulterphoto {
+  width: 30px;
+}
+
+.titre_message_utilisateur {
+  font-size: 16px;
+  font-family: BebasNeueRegular, Verdana, Arial, Sans-serif;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+#footer {
+  width:90%;
+  padding: 20px 0 0;
+  grid-template-rows: 60px 110px 110px 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer_column {
+  padding:0 5px;
+}
+.footer_column:nth-child(5) {
+  grid-row: 3;
+  padding:0 5px;
+}
+.footer_column:nth-child(4) {
+  grid-row: 3;
+  padding:0 5px;
+}
+.footer_lineend {
+  grid-row: 4;
+}
+.noblock_inside {
+  padding: 0;
+}
+.parrainage_en_cours {
+  flex-wrap:wrap;
+  }
+
+.parrainage_en_cours .date {
+    border:1px solid #DDD;
+    background: #EEE;
+  }
+.parrainage_en_cours :nth-child(2) {
+    order:2;
+    margin-top:5px;
+  }
+.parrainage_en_cours :nth-child(3) {
+  order:1;
+  flex:1 1 0;
+}
+.parrainage_en_cours :nth-child(4) {
+  order:6;
+}
+#crumbs span {
+  display:none;
+}
+.parrainage_en_cours :nth-child(5) {
+  order:3;
+}
+.parrainage_en_cours :nth-child(6) {
+  order:4;
+}
+.parrainage_en_cours :nth-child(7) {
+  order:5;
+}
+.parrainage_en_cours :nth-child(8) {
+  order:7;
+  flex-basis:100%;
+}
+.parrainage_en_cours :nth-child(9) {
+  order:8;
+  flex-basis:100%;
+}
+#crumbs ul {
+  padding:0;
+}
+#crumbs ul li {
+  height: 15px;
+  padding: 15px 5px 0 20px;
+  margin: 0 5px 5px 0;
+  font-size: 10px;
+  text-align: center;
+  box-shadow: none;
+  }
+#crumbs ul li:after { 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #DDD;
+  right: -14px; 
+  }
+  #crumbs ul li:before { 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #FFF;
+}
+#crumbs ul li:first-child {
+  padding-left: 10px;
+}
+#crumbs ul li:last-child {
+  padding-right: 10px;
+}
+#inputadd_comment {
+  min-width:0 !important;
+  margin:0;
+  padding:5px;
+}
+
+.aff_droitindex {
+  min-width:0;
+}
+.flexandcolumn {
+  flex-direction: column;
+  margin-bottom:20px;
+}
+#crumbs  .marchand .item-img {
+	width:80px;
+  height:auto;
+}
+#crumbs ul .colicopi {
+  padding: 7px 5px 2px;
+}
+  }
+  
+  

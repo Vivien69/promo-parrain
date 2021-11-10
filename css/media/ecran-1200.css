@@ -1,0 +1,19 @@
+@media all and (max-width : 1200px) {
+
+  .ar_dimension {
+    max-width:1400px;
+    margin:0 auto;
+  }
+
+}
+
+@media (min-width : 992px) and (max-width : 1500px) {
+  
+    #ca_message {
+    max-width:270px 
+  }
+  .mainbadges {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+  

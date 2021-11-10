@@ -1,0 +1,91 @@
+
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.
+
+RewriteRule	^index.html$	index.php	[L]
+RewriteRule	^information.html$	information.php	[L]
+
+#ESPACE MEMBRES
+RewriteRule	^inscription$ membres/inscription.php	[L]
+RewriteRule	^valider/(.*)/(.*)/$ membres/valider.php?log=$1&valid=$2	[L]
+RewriteRule	^connexion$ membres/connexion.php	[L]
+RewriteRule	^deconnexion$ membres/deconnexion.php	[L]
+RewriteRule	^passe_perdu$ membres/pass_perdu.php	[L]
+RewriteRule	^generate_pass/(.*)/(.*)$ membres/pass_generate.php?email=$1&key=$2	[QSA,L,NE]
+RewriteRule	^membres/parametres$ membres/parametres.php	[L]
+RewriteRule	^profil/([0-9]+)$ membres/profil.php?idm=$1	[L]
+RewriteRule	^membres/annonces$ membres/annonces.php	[L]
+RewriteRule	^membres$ membres/index.php	[L]
+RewriteRule	^membres/messagerie$ membres/messagerie2.php	[L]
+RewriteRule	^membres/notifications(/[0-9]+)?$ membres/notifications.php?page=$1	[L]
+RewriteRule	^membres/parrainages(/[0-9]+)?$ membres/parrainages.php?page=$1	[QSA,L]
+RewriteRule	^membres/parrainages_archives(/[0-9]+)?$ membres/parrainages_archives.php?page=$1	[QSA,L]
+RewriteRule	^membres/proposer-marchand$ membres/marchands.php	[L]
+RewriteRule	^membres/badges$ membres/badges.php	[L]
+RewriteRule	^email/(.*)$ membres/includes/mail.php?email=$1	[QSA,L,NE]
+
+#PAGES ADMIN
+RewriteRule	^membres/admin/liste-marchands$ membres/admin/marchands.php	[L]
+RewriteRule	^membres/admin/marchands/edit/([0-9]+)$ membres/admin/edit_marchands.php?idm=$1	[QSA,L,NE]
+RewriteRule	^membres/admin/liste-utilisateurs/([0-9]+)$ membres/admin/membres.php?page=$1	[L]
+RewriteRule	^membres/admin/liste-messages/([0-9]+)$ membres/admin/messages.php?page=$1	[L]
+RewriteRule	^membres/admin/parrainages/([0-9]+)$ membres/admin/ap.php?page=$1	[L]
+RewriteRule	^membres/admin/liste-avis/([0-9]+)/?([0-9]+)?-?([^/]*)?/?([a-z]+)?$ membres/admin/avis.php?page=$1&id=$2&delete=$3&verified=$4	[QSA,L]
+RewriteRule	^membres/admin/avis-marchands/([0-9]+)/?([0-9]+)?-?([^/]*)?/?([a-z]+)?$ membres/admin/avis_marchands.php?page=$1&id=$2&delete=$3&verified=$4	[QSA,L]
+RewriteRule	^membres/admin/signaler/([0-9]+)?$ membres/admin/signaler.php?page=$1	[QSA,L]
+RewriteRule	^membres/admin/histo/([0-9]+)?$ membres/admin/histomarchand.php?page=$1	[QSA,L]
+RewriteRule	^membres/admin/histo_edit/([0-9]+)?$ membres/admin/histomarchands_edit.php?id=$1	[QSA,L]
+
+
+#PAGES AJOUTER DES CODES
+RewriteRule	^ajouter$ pages/ajouter.php	[L]
+
+RewriteRule	^codespromo/ajouter$ pages/codespromo/ajouter_code.php	[L]
+RewriteRule	^remise/ajouter$ pages/ajouter_offre/ajouter_remise.php	[L] 
+RewriteRule	^ajouter/ajouter_coupon$ pages/ajouter_offre/ajouter_coupon.php	[L] 
+RewriteRule	^ajouter/ajouter_odr$ pages/ajouter_offre/ajouter_odr.php	[L] 
+RewriteRule	^liste-marchands/?([a-zA-Z0-9]+)?$ pages/all_marchands.php?alpha=$1	[QSA,L]
+RewriteRule	^codes_promotionnels$ pages/codespromo/index.php	[L] 
+
+#PAGES GENERALISTES
+RewriteRule	^contact(/.*)?$ includes/footer/contact.php?offre=$1	[L]
+RewriteRule	^mentions-legales$ includes/footer/ml.php	[L]
+RewriteRule	^regles-de-publication$ includes/footer/regles.php	[L]
+
+#PAGES ACTIVES
+RewriteRule	^parrain/(.*)-([0-9]+)$ pages/parrain/voir.php?marchand=$1&id=$2	[QSA,L,NE]
+RewriteRule	^parrainages$ pages/parrain/derniers_parrainages.php	[L] 
+RewriteRule	^parrainages-boostes$ pages/parrain/boosted_parrainages.php	[L] 
+RewriteRule	^categories$ pages/categories.php	[L]
+RewriteRule	^parrain/ajouter$ pages/parrain/ajouter.php	[L]
+RewriteRule	^parrain/editer/([0-9]+)$ pages/parrain/editer.php?id=$1	[QSA,L,NE]
+
+#RewriteRule	^parrainage-(.*)-([0-9]+)$ pages/annonces_marchand.php?marchand=$1&idm=$2	[QSA,L]
+#RewriteRule	^parrainage-(.*)-([0-9]+)$ pages/annonces_marchand.php?marchand=$1&idm=$2	[QSA,L]
+RewriteRule	^(.*)-([0-9]+)/(.*)-([0-9]+)/parrainage$ pages/annonces_marchand.php?categorie=$1&idcat=$2&marchand=$3&idm=$4	[QSA,L]
+RewriteRule	^(.*)-([0-9]+)/(.*)-([0-9]+)/codes-promo$ pages/annonces_marchand.php?categorie=$1&idcat=$2&marchand=$3&idm=$4	[QSA,L]
+RewriteRule	^(.*)-([0-9]+)/(.*)-([0-9]+)$ pages/annonces_marchand.php?categorie=$1&idcat=$2&marchand=$3&idm=$4	[QSA,L]
+RewriteRule	^([a-zA-Z0-9-]+)-([0-9]+)$ pages/liste_par_categorie.php?categorie=$1&idcat=$2	[L]
+
+#SITEMAP
+RewriteRule ^includes/sitemap.xml$ includes/sitemap.php [L,NE]
+
+<Files "composer.json">
+Order Allow,Deny
+Deny from all
+</Files>
+<Files "composer.lock">
+Order Allow,Deny
+Deny from all
+</Files>
+
+
+
+
+
+
+
+

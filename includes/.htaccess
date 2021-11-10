@@ -1,0 +1,12 @@
+<Files "cron_rzero.php">
+Order Allow,Deny
+Deny from all
+</Files>
+<Files "cron_deleted24h.php">
+Order Allow,Deny
+Deny from all
+</Files>
+#<Files "backup.sh">
+#Order Allow,Deny
+#Deny from all
+#</Files>
